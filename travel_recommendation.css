@@ -13,7 +13,12 @@ nav {
     justify-content: space-between;
     
   }
-  
+
+  .logo {
+    height: 100%; /* Makes logo fill the height of the navbar */
+    width: auto; /* Maintains aspect ratio */
+  }
+
   nav ul {
     list-style-type: none;
     /* padding: 0; */
