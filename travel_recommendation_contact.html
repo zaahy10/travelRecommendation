@@ -6,15 +6,17 @@
   <link rel="stylesheet" href="./travel_recommendation.css">
 </head>    
 <body>
-  <nav><h1>Health Analysis Census</h1>
+  <nav><h1>Travel Explorer</h1>
     <ul>
-      <li><a href="./index.html" id="home">Home </a></li>
+      <li><a href="./travel_recommendation.html" id="home">Home </a></li>
       <li><a href="./health_contact.html" id="contact">Contact Us </a></li>
+      <li><a href="./travel_recommendation_about.html" id="about">About Us </a></li>
       </li>
 
     </ul>
     </nav>
-  <h1>Contact Us</h1>
+  <div class="bg-text">  
+    <h1>Contact Us</h1>
   <p>Feel free to contact us to know more about your conditions and for treatment methods.</p>
 
   <form id="contactForm">
@@ -27,15 +29,12 @@
       <input type="email" id="email" name="email" required>
     </div>
     <div>
-      <label for="condition">Condition</label>
-      <input type="text" id="condition" name="condition" required>
-    </div>
-    <div>
       <label for="message">Message</label>
       <textarea id="message" name="message" rows="5" required></textarea>
     </div>
     <button type="submit" onclick="thankyou()">Submit</button>
   </form>
+</div>
   <script>
     function thankyou(){
         alert('Thank you for contacting us!')

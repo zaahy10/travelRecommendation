@@ -1,11 +1,11 @@
 // Fetch data and store globally
-let travelData = {};
+let destinationData = {};
 
 // Fetch JSON data
 fetch('travel_recommendation_api.json')
   .then(response => response.json())
   .then(data => {
-    travelData = data;
+    destinationData = data;
     console.log('Data loaded successfully:', data);
   })
   .catch(error => {
@@ -27,18 +27,18 @@ function searchRecommendations() {
 
   // Match keyword: beaches
   if (search === "beach" || search === "beaches") {
-    results = travelData.beaches;
+    results = destinationData.beaches;
   }
 
   // Match keyword: temples
   else if (search === "temple" || search === "temples") {
-    results = travelData.temples;
+    results = destinationData.temples;
   }
 
   // Match keyword: countries (e.g. "Japan", "Brazil")
   else {
     // find country by name
-    const country = travelData.countries.find(
+    const country = destinationData.countries.find(
       c => c.name.toLowerCase() === search
     );
     if (country) {

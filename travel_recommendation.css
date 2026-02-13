@@ -50,8 +50,8 @@ nav {
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 10%;
+    left: 10%;
     padding: 20px;
     
   }
@@ -87,7 +87,7 @@ nav {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: #070654;
 }
 
   /* Basic CSS for the form elements */
