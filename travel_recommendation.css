@@ -65,6 +65,14 @@ nav {
     height: auto;
    }
 
+   .results h3{
+    color: white;
+   }
+
+   .results p{
+    color: white;
+   }
+
   /* Position text in the middle of the page/image */
   .bg-text {
     background-color: rgb(0,0,0); /* Fallback color */
@@ -111,6 +119,12 @@ nav {
   padding: 16px;
   text-align: center;
   background-color: #070654;
+  color: white;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
 }
 
   /* Basic CSS for the form elements */
@@ -184,16 +198,3 @@ nav {
     max-width: 400px;
     word-wrap: break-word;
   }
-#result{
-  height: 400px;
-  width: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-}
-  #result img{
-    width: 200px;
-    height: 100px;
-  }
-  
