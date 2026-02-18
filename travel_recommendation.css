@@ -42,13 +42,28 @@ nav {
     background-size: cover;
   }
 
-  #results {
+  .results {
     display: flex;
     flex-direction: column;
-    align-items: right;
-    margin-left: 10%;
-    width: 600px;
-}
+    background-color: navy;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+
+  .results div {
+    background-color: #f1f1f1;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;  
+    font-size: 30px;
+   }
+
+   .results img {
+    max-width: 100%;
+    height: auto;
+   }
 
   /* Position text in the middle of the page/image */
   .bg-text {
