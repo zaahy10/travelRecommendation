@@ -1,3 +1,5 @@
+const btnSearch = document.getElementById('btnSearch');
+
 // Fetch data and store globally
 let destinationData = {};
 
@@ -14,7 +16,7 @@ fetch('travel_recommendation_api.json')
 
 // Function to handle search
 function searchRecommendations() {
-  const search = document.getElementById('search').value.trim().toLowerCase();
+  const search = document.getElementById('searchInput').value.trim().toLowerCase();
   const resultsDiv = document.getElementById('results');
   resultsDiv.innerHTML = ""; // Clear previous results
 
@@ -66,8 +68,10 @@ function searchRecommendations() {
   });
 }
 
+btnSearch.addEventListener("click", searchRecommendations)
+
 // Function to clear results
 function clearResults() {
-  document.getElementById('search').value = '';
+  document.getElementById('searchInput').value = '';
   document.getElementById('results').innerHTML = '';
 }
